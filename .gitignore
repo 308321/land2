@@ -1,0 +1,30 @@
+# ===== Unity 缓存 / 临时产物 / 打包输出 =====
+/Library/
+/Temp/
+/Obj/
+/Build/
+/Builds/
+/Logs/
+/MemoryCaptures/
+/UserSettings/
+/Debug/
+/BuildOutput/
+
+# ===== IDE 相关 =====
+/.vs/
+/.vscode/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+/.idea/
+
+# ===== 系统文件 =====
+.DS_Store
+Thumbs.db
+*.log
+UpgradeLog.htm
