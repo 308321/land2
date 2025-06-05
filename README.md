@@ -62,6 +62,81 @@ Adobe After Effects	  动画/后期制作	用于制作开场动画、过场视�
 
 ### 克隆仓库
 
-```bash
-git clone https://github.com/308321/land2.git
-cd land2
+---
+
+## 项目结构
+
+land2/
+├── Assets/                  # Unity 项目资源目录
+│   ├── Scenes/              # 包含所有场景文件（.unity）
+│   ├── Scripts/             # C# 脚本文件夹
+│   │   ├── Gameplay/        # 物理解谜逻辑脚本
+│   │   ├── UI/              # UI 交互脚本
+│   │   └── Manager/         # 游戏管理器，如场景加载、进度控制
+│   ├── Prefabs/             # 预制体
+│   ├── Models/              # 3D 模型资源（.fbx 等）
+│   ├── Textures/            # 贴图资源（.png/.jpg 等）
+│   └── UI/                  # Canvas、按钮等 UI 资源
+│
+├── Packages/                # Unity Package 管理的依赖
+│   └── manifest.json        # 包装列表
+│
+├── ProjectSettings/         # Unity 项目全局配置
+│   ├── ProjectSettings.asset
+│   └── InputManager.asset   # 输入映射
+│
+├── .gitignore               # Git 忽略规则
+├── README.md                # 本自述文件
+└── LICENSE                  # 项目开源协议（可选）
+
+
+---
+
+## 开发者信息
+
+开发者：佘钊莉（安徽大学 软件工程 2022级）
+
+GitHub 个人主页：https://github.com/308321
+
+---
+
+## 版权与协议
+
+本项目采用 MIT License，详情请参见 LICENSE 文件。
+
+以下为简要许可说明：
+
+MIT License
+
+Copyright (c) 2025 佘钊莉
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”), to deal
+in the Software without restriction, including without limitation the rights
+...
+
+允许任何人免费使用、复制、修改并分发本项目，只要保留本许可声明。
+
+对本项目或其衍生作品不提供任何担保，也不承担任何责任。
+
+---
+
+## 常见问题（FAQ）
+
+- SampleScene场景中物体贴图丢失/异常
+
+  - 在项目的Chinese Painting URP的Material或Texture找到相应材料或贴图，展开预制体，拖入即可
+
+- Unity 异常
+
+这通常是因为你的本地 Unity 版本和项目保存时的版本不同，建议升级（或降级）到 2020.3.18f1 LTS。
+
+如果升级到更高版本，请在打开时选择“Upgrade”并等待 Unity 自动完成所有资源重新导入。
+
+如何贡献代码或提交 Issue
+
+欢迎在本仓库的 Issues 中提交 Bug 报告或功能建议。请在 Issue 标题中简要描述问题，并附上重现步骤。
+
+如要贡献代码，请先 Fork 本仓库，在 Fork 出来的项目中创建分支进行修改，提交完成后发起 Pull Request，我们会及时进行 Code Review。
+
+
